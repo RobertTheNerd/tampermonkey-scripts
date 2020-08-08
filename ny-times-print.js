@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         NY Times CN Print
+// @name         NY Times Two-Column Print layout
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.11
 // @description  try to take over the world!
 // @author       You
-// @match        https://cn.nytimes.com/*
+// @include        https://cn.nytimes.com/*
 // @grant        none
 // ==/UserScript==
 
