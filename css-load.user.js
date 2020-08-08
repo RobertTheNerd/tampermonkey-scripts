@@ -7,8 +7,8 @@
 // @author       RobertTheNerd
 // @homepage     https://github.com/RobertTheNerd/tampermonkey-scripts/
 // @homepageURL  https://github.com/RobertTheNerd/tampermonkey-scripts/
-// @downloadURL  https://github.com/RobertTheNerd/tampermonkey-scripts/raw/master/css-loader.js
-// @updateURL    https://github.com/RobertTheNerd/tampermonkey-scripts/raw/master/css-loader.js
+// @downloadURL  https://github.com/RobertTheNerd/tampermonkey-scripts/raw/master/css-loader.user.js
+// @updateURL    https://github.com/RobertTheNerd/tampermonkey-scripts/raw/master/css-loader.user.js
 // @supportURL   https://github.com/RobertTheNerd/tampermonkey-scripts/issues
 // @include      https://cn.nytimes.com/*
 // @grant        none
