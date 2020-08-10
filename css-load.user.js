@@ -2,7 +2,7 @@
 // @name         Custome style loader
 // @namespace    https://github.com/RobertTheNerd/tampermonkey-scripts/
 // @description  Allows custom styles to be applied to a website
-// @version      0.1.001
+// @version      0.1.002
 // @description  try to take over the world!
 // @author       RobertTheNerd
 // @homepage     https://github.com/RobertTheNerd/tampermonkey-scripts/
