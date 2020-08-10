@@ -29,8 +29,11 @@
         link.id = cssId;
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://raw.githubusercontent.com/RobertTheNerd/tampermonkey-scripts/master/css/' + domain + '.css?t=10';
+        link.href = 'https://raw.githubusercontent.com/RobertTheNerd/tampermonkey-scripts/master/css/' + domain + '.css';
         head.appendChild(link);
         console.log('Custom style added: ' + link.href);
+        fetch(link.href)
+            .then(response => response.text())
+            .then(console.log);
     }
 })();
