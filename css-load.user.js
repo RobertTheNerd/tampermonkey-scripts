@@ -2,7 +2,7 @@
 // @name         Custome style loader
 // @namespace    https://github.com/RobertTheNerd/tampermonkey-scripts/
 // @description  Allows custom styles to be applied to a website
-// @version      0.1.002
+// @version      0.1.003
 // @description  try to take over the world!
 // @author       RobertTheNerd
 // @homepage     https://github.com/RobertTheNerd/tampermonkey-scripts/
@@ -15,25 +15,22 @@
 // ==/UserScript==
 
 
+function GM_addStyle (cssStr) {
+    var D               = document;
+    var newNode         = D.createElement ('style');
+    newNode.textContent = cssStr;
+
+    var targ    = D.getElementsByTagName ('head')[0] || D.body || D.documentElement;
+    targ.appendChild (newNode);
+}
+
 (function() {
     'use strict';
 
-
     const domain = window.location.hostname;
-
-    var cssId = domain + '-custom-style'; // you could encode the css path itself to generate id..
-    if (!document.getElementById(cssId))
-    {
-        var head = document.getElementsByTagName('head')[0];
-        var link = document.createElement('link');
-        link.id = cssId;
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'https://raw.githubusercontent.com/RobertTheNerd/tampermonkey-scripts/master/css/' + domain + '.css';
-        head.appendChild(link);
-        console.log('Custom style added: ' + link.href);
-        fetch(link.href)
-            .then(response => response.text())
-            .then(console.log);
-    }
+    
+    const href = 'https://raw.githubusercontent.com/RobertTheNerd/tampermonkey-scripts/master/css/' + domain + '.css';
+    fetch(href)
+    .then(response => response.text())
+    .then(GM_addStyle);
 })();
