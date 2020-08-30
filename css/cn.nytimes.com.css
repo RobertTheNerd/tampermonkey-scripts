@@ -45,10 +45,10 @@
 }
 
 @page :left {
-    margin-right: 40px;
+    margin-right: 40px !important;
 }
 
 @page :right {
-    margin-left: 40px;
+    margin-left: 40px !important;
 }
 
