@@ -43,3 +43,12 @@
         text-decoration: none !important;
     }
 }
+
+@page :left {
+    margin-right: 40px;
+}
+
+@page :right {
+    margin-left: 40px;
+}
+
