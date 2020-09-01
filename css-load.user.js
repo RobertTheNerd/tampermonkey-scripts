@@ -11,6 +11,7 @@
 // @updateURL    https://github.com/RobertTheNerd/tampermonkey-scripts/raw/master/css-loader.user.js
 // @supportURL   https://github.com/RobertTheNerd/tampermonkey-scripts/issues
 // @include      https://cn.nytimes.com/*
+// @include      https://www.wsj.com/*
 // @grant        none
 // ==/UserScript==
 
