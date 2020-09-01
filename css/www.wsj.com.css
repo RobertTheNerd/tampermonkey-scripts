@@ -19,6 +19,20 @@
   
   article#article-contents {
     width: 100% !important;
+    padding: 0 20px !important;
+  }
+  
+  .column.at8-col8.at12-col7.at16-col9.at16-offset1 {
+    width: 100%;
+  }
+  
+  #main .wsj-article-headline-wrap {
+    max-width: 100% !important;
+  }
+  
+  header.article_header.module {
+    margin-right: 0 !important;
+    width: 100% !important;
   }
   
   a {
