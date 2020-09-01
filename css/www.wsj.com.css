@@ -26,7 +26,7 @@
     padding: 0 20px !important;
   }
   
-  .column.at8-col8.at12-col7.at16-col9.at16-offset1 {
+  .column {
     width: 100%;
   }
   
