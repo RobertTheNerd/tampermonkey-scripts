@@ -1,0 +1,27 @@
+@media print {
+  .print-header {
+    display: none !important;
+  }
+  .category.recent {
+    display: none;
+  }
+  .media-object.type-InsetMediaIllustration.header.article__inset.article__inset--type-InsetMediaIllustration.article__inset--header.article__inset--lead {
+    display: none;
+  }
+  
+  .media-object-article-reader {
+    display: none;
+  }
+  
+  div#article_sector {
+    width: 100%;
+  }
+  
+  article#article-contents {
+    width: 100% !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+}
