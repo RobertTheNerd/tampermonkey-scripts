@@ -1,8 +1,12 @@
 @media print {
+  * {
+    color: black !important;
+  }
+  
   body .print-footer, body .print-header {
     display: none !important;
   }
-  .category.recent {
+  .article_header .category {
     display: none;
   }
   .media-object.type-InsetMediaIllustration.header.article__inset.article__inset--type-InsetMediaIllustration.article__inset--header.article__inset--lead {
@@ -33,6 +37,14 @@
   header.article_header.module {
     margin-right: 0 !important;
     width: 100% !important;
+  }
+  
+  .media-object.type-InsetRichText {
+    display: none;
+  }
+  
+  figure.media-object-image {
+    display: none;
   }
   
   a {
